@@ -1,5 +1,6 @@
 # 冒泡排序
-# 依次比较两个值，
+# 依次比较两个值，若第一个比第二个大，则交换
+# 对每一对相邻的元素进行比较，从开始到最后，做完之后，最后的元素为最大的数
 def bubble_sort(sort_list):
     if len(sort_list) <= 1:
         return sort_list
