@@ -21,7 +21,7 @@ def lscUseDirectIterator(str1, str2):
                     max_length = temp_length
                     max_end = index1
     if max_length == 0:
-        return 123
+        return ''
     else:
         start_index = int(max_end-max_length)
         end_index = int(max_end)
