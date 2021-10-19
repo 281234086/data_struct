@@ -1,3 +1,5 @@
+# 双向循环链表
+
 class Node(object):
     '''定义链表对象'''
     def __init__(self, item):
