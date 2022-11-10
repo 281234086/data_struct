@@ -35,7 +35,7 @@ class SingleLinkList(object):
             return
         cur = self._head
         while cur.next != None:
-            print(cur.item, end=' ')
+            print(cur.item, end=' ergo ')
             cur = cur.next
         print(cur.item)
 
