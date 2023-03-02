@@ -4,9 +4,9 @@ def quickly_sort(list_1):
     if len(list_1) < 2:
         return list_1
     item = list_1[0]
-    less = [i for i in list_1[0:] if i < item]
-    great = [j for j in list_1[0:] if j > item]
-    return quickly_sort(less) + list(item) + quickly_sort(great)
+    before_list = [i for i in list_1[0:] if i < item]  # 大于item的值
+    after_list = [j for j in list_1[0:] if j > item]  # 小于item的值列表
+    return quickly_sort(before_list) + [item] + quickly_sort(after_list)
 
 if __name__ == '__main__':
     list1 = [2,3,411,23,4,21,32,1]
